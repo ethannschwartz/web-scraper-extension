@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "HTML Structure Identifier",
+  "version": "1.0",
+  "description": "Identifies elements with the same HTML structure on hover.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
